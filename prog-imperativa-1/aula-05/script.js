@@ -1,26 +1,15 @@
-var cotacaoDolarHoje = 5.3
+var nome = prompt('Qual é o seu nome?'); 
+var reais = prompt('Quantos dólares você quer cotar?'); 
+var cotacao = 5.4
 
-function nomeInput(){
-    var nome = prompt('Qual é o seu nome?'); 
-    return nome
-}
-
-function dolaresInput(){
-    var dolares = prompt('Quantos dólares você quer cotar?'); 
-    return dolares
-}
 
 function result(){
-    var resultado = dolares*cotacaoDolarHoje;
-    return resultado
+    return reais*cotacao;
 }
 
-function alerta(mensagem){
-    alert(mensagem + nome)
+function alerta(){
+    alert(`Olá, ${nome}! R$ ${reais} valem US$ ${result()} hoje.`)
 }
 
-nomeInput();
-dolaresInput();          
-result();
 
-alerta('olá, ');
+alerta();
