@@ -12,7 +12,7 @@ x /= y //divide pelo valor de y (x = x / y)
 x %= y //atribui o valor do resto de y (x = x % y)
 x **= y //Exponenciação de y (x = x ** y)
 
-COMPARAÇÃO
+COMPARAÇÃO (Retorna booleans)
 x == y //verifica se é igual
 x != y //verifica se é diferente
 x === y //verifica se é estritamente igual
@@ -43,4 +43,5 @@ let sobrenome = "Estefan"
 let nomeCompleto = nome + " " + sobrenome // Carlos Estefan
 */
 
-console.log(x);
+console.log(`${x} ${y}`);
+
