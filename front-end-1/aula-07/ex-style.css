@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;   
+}
+
+h1 {
+    font-size: 30pt;
+    color: #eb8500;
+}
+
+.job-title {
+    margin-top: -20px;
+    font-size: 15pt;
+    padding: 0.5%;
+    padding-left: 0.6%;
+    color: #ffffff;
+    background-color: #383838;
+}
+
+main {
+    color: #4e4e4e;
+}
+
+#high {
+    margin-top: 2%;
+    color: #eb8500;
+}
+
+footer {
+    margin-top: 2%;
+    padding: 0.5%;
+    padding-left: 0.6%;
+    background-color: #383838;
+    color: #d1d1d1
+
+}
+
+h2 {
+    color: #ffffff
+}
+
+strong {
+    color: #ffffff
+}
+
+a {
+    color:#eb8500
+}
