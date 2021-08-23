@@ -12,10 +12,16 @@ const estadoCivil = "casados";
 // string é um texto, e é declarado entre aspas (duplas ou simples)
 
 // inteiro
-let idade = 36;
+let idade = 36; //number int
 
 // decimal
-let altura = 1.83;
+let altura = 1.83; //number float
+
+//Math.round retorna o valor arredondado para o NÚMERO INTEIRO MAIS PRÓXIMO
+let arredondar = Math.round(1.83)
+
+//Math.sqrt raiz quadrada
+let raizQuadrada = Math.sqrt(4)
 
 //boolean
 let diaSeco = true;
@@ -28,7 +34,7 @@ let naoNumerico = NaN;
 let passageirosTrem = null;
 
 // indefinidos
-let passageirosOnibus = undefined;
+let passageirosOnibus; //undefined
 passageirosOnibus = 40
 
 // objeto literal
@@ -39,8 +45,6 @@ let meuCarro = {
 
 // Arrays (lista) - Contagem começa SEMPRE DO ZERO - A ordem representa a ordem da lista, abaixo 0, 1, 2, 3
 let seriesFavoritas = ["Friends", "Breaking Bad", "Chaves", "The Office"];
-
-console.log(seriesFavoritas);
 
 
 
