@@ -23,7 +23,7 @@ idade = 15;
 let acesso = '';
 if (idade < 16){
     acesso = 'Acesso negado';
-}else if (idade >= 16 & idade <= 18) {
+}else if (idade >= 16 && idade <= 18) {
     acesso = 'Acesso liberado somente com acompanhante maior de idade'
 }else {
     acesso = 'Acesso liberado'
@@ -49,4 +49,24 @@ switch(dia){
         break;
     default :
         console.log("Não vou fazer nada")
+}
+
+//------------------------------------------------
+
+let carro;
+carro = "Fiesta"
+
+switch(carro){
+    case "fusca" :
+        console.log("Volkswagen");
+        break;
+    case "ka" :
+        console.log("Ford");
+        break;
+    case "civic" :
+        console.log("Honda");
+        break;
+    default :
+        console.log("Marca não encontrada");
+        break;
 }
