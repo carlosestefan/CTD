@@ -42,13 +42,14 @@ body {
     padding: 32px 12px;
     transition: .5s ease-in-out;
     cursor: pointer;
+    filter: brightness(60%);
 
 }
 
 .video:hover {
 
     transform: scale(1.02);
-    filter: brightness(120%);
+    filter: brightness(100%);
 
 }
 
