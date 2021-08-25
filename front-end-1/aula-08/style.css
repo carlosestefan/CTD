@@ -41,12 +41,12 @@ p {
     font-size: 12pt;
     padding-left: 40pt;
     padding-right: 40pt;
+    margin-bottom: 40pt;
 }
 
 span {
     background-color: #f0ce61;
     padding: 10pt;
-    margin-top: 100pt;
     margin-left: 40pt;
     }
 
