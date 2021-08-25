@@ -52,9 +52,7 @@
                 - Caso a resposta seja não:
                     - Receberá um pedido de agradecimento.
 
-        */
-        function calcularImc() {
-
+        */    
             var pessoa = {
                 nome: '',
                 peso : 0,
@@ -62,7 +60,8 @@
                 imc : 0,
                 classificacao: ''
             }
-
+        
+        function calcularImc() {
             pessoa.nome = prompt('Qual é o seu nome?');
             pessoa.peso = parseFloat (prompt('Qual seu peso?'));
             pessoa.altura = parseFloat (prompt('Qual sua Altura?'));
