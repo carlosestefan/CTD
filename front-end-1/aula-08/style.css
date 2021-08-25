@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.media-picture {
+    background-image: url('https://wallpaperaccess.com/full/1104121.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+
+}
+
+.review-score {
+    background-color: #f3ba00;
+    padding: 15pt;
+    font-size: 20pt;
+    font-weight:900;
+    margin-left: 40pt;
+}
+
+h1 {
+    font-size: 30pt;
+    font-weight:900;
+    margin-left: 40pt;
+    
+}
+
+h2 {
+    margin-top: 40pt;
+    color: #f3ba00;
+    font-weight:600;
+    padding-left: 40pt;
+}
+
+p {
+    font-size: 12pt;
+    padding-left: 40pt;
+    padding-right: 40pt;
+}
+
+span {
+    background-color: #f0ce61;
+    padding: 10pt;
+    margin-top: 100pt;
+    margin-left: 40pt;
+    }
+
+a {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+
