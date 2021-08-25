@@ -32,6 +32,7 @@ button {
     color: #ffb700;
     padding: 0.625rem;
     cursor: pointer;
+    transition: .5s ease-in-out;
     
 }
 
@@ -44,5 +45,6 @@ button:hover {
     color: #000000;
     padding: 0.625rem;
     cursor: pointer;
+    transform: scale(1.1);
     
 }
