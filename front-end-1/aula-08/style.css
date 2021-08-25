@@ -20,39 +20,44 @@ body {
     padding: 15pt;
     font-size: 20pt;
     font-weight:900;
-    margin-left: 40pt;
+    margin-left: 50pt;
 }
 
 h1 {
     font-size: 30pt;
     font-weight:900;
-    margin-left: 40pt;
+    margin-left: 50pt;
     
+}
+
+strong {
+    color: #f3ba00;
 }
 
 h2 {
     margin-top: 40pt;
     color: #f3ba00;
     font-weight:600;
-    padding-left: 40pt;
+    padding-left: 50pt;
 }
 
 p {
     font-size: 12pt;
-    padding-left: 40pt;
-    padding-right: 40pt;
-    margin-bottom: 40pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    margin-bottom: 50pt;
 }
 
 span {
-    background-color: #f0ce61;
+    background-color: #ffffff;
     padding: 10pt;
-    margin-left: 40pt;
+    margin-left: 50pt;
     }
 
 a {
-    color: #ffffff;
+    color: #e98407;
     font-weight: 900;
+    text-decoration: none;
 }
 
 
