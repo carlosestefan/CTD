@@ -79,12 +79,12 @@ function calcularImc() {
     pessoa.nome = prompt('Qual é o seu nome?');
     pessoa.peso = parseFloat(prompt('Qual seu peso?'));
     pessoa.altura = parseFloat(prompt('Qual sua Altura?'));
-    pessoa.imc = pessoa.peso / (pessoa.altura * pessoa.altura);
+    pessoa.imc = peso / (altura * altura);
 
     if (pessoa.imc < 18.5){
         pessoa.classificacao = 'Magreza'
         alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}.`);
-    }else if (18.5 <= pessoa.imc && pessoa.imc <= 24.9){
+    }else if (18.5 <= pessoa.imc <= 24.9){
         pessoa.classificacao = 'Normal'
         alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}.`);
     }else if (25 <= pessoa.imc && pessoa.imc <= 29.9){

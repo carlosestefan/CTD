@@ -6,19 +6,19 @@ var pessoa = {
     classificacao: ''
 };
 
-/*
+
 function consulta(){
-    var r = confirm(`Sua classificação é ${pessoa.classificacao}. Você gostaria de marcar uma consulta com uma nutricionista?`)
-    var data;
-    if (r==true) {
+    var consulta = confirm(`Sua classificação é ${pessoa.classificacao}. Você gostaria de marcar uma consulta com uma nutricionista?`)
+    if (consulta==true) {
         pessoa.nome = prompt('Informe seu nome')
-        data = get
+        var data = prompt('Informe a data que deseja marcar')
+        var hora = prompt('Informe a hora da consulta')
         alert(`Olá, ${pessoa.nome}! Sua consulta foi marcada para ${data}, às ${hora}.`)
     } else {
        alert('Obrigado pela sua visita!')
     }
 }
-*/
+
 
 function calcularImc() {
 
@@ -35,7 +35,8 @@ function calcularImc() {
         alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}.`);
     }else if (25 <= pessoa.imc && pessoa.imc <= 29.9){
         pessoa.classificacao = 'Sobrepeso'
-        alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}. Você precisa marcar uma consulta com a nutricionista Dra. Luana Nagydai.`);
+        
+        //alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}. Você precisa marcar uma consulta com a nutricionista Dra. Luana Nagydai.`);
     }else if (30 <= pessoa.imc && pessoa.imc <= 39.9){
         pessoa.classificacao = 'Obesidade'
         alert(`Olá, ${pessoa.nome}! Seu IMC é ${pessoa.imc.toFixed(2)} e sua classificação é ${pessoa.classificacao}. Você precisa marcar uma consulta com a nutricionista Dra. Luana Nagydai.`);
@@ -92,3 +93,4 @@ function calcularImc() {
         // bianca moraes
         // paulo souza
         // carlos estefan
+        // anderson silva
