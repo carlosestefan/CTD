@@ -1,4 +1,6 @@
 /*
+//VERSÃO 1
+
 const alturaUsuario = prompt('Qual a sua altura?');
 const temAcompanhante = confirm('Você tem acompanhante?');
 
@@ -33,6 +35,9 @@ function cumprePreRequisito (altura, preRequisitoTemAcompanhante) {
 }
 */
 
+/*
+//VERSÃO 2
+
 const alturaUsuario = prompt('Qual a sua altura?');
 const temAcompanhante = confirm('Você tem acompanhante?');
 
@@ -61,38 +66,25 @@ function cumprePreRequisito (altura, preRequisitoTemAcompanhante) {
 
 }
 
+*/
 
-/*
+//VERSÃO 3
 
-acesso = 'Acesso autorizado somente com preRequisitoTemAcompanhante.'
+const altura = prompt('Qual a sua altura?')
+const acompanhante = confirm('Você tem acompanhante?')
 
-function podeSubir (altura, preRequisitoTemAcompanhante, acesso) {
+function podeSubir (altura, acompanhante) {
 
-
-    altura = 1.7;
-    preRequisitoTemAcompanhante = false;
-
-    if ((altura < 1.2 && altura >= 2) || ((altura => 1.2 && altura <= 1.4) && (preRequisitoTemAcompanhante == false))){
-        //(false && true) || ((true && true) && true)
-        // false || true
-        acesso = false;
-        return acesso
-    } else if ((altura < 2 && altura > 1.4) || ((altura => 1.2 && altura <= 1.4) && (preRequisitoTemAcompanhante == true))){
-        acesso = true
-        return acesso
+    if ((altura < 1.2 && altura >= 2) && ((altura <= 1.4 && altura >= 1.2) && (acompanhante == false))){
+        alert('Acesso negado.');
+    } else if ((altura < 2 && altura > 1.4) || ((altura <= 1.4 && altura >= 1.2) && (acompanhante))){
+        alert('Acesso permitido.');
     }else {
-        acesso = false
-        return acesso
+        alert('Acesso negado');
     }
 
 
 
 }
 
-podeSubir();
-
-*/
-
-
-
-
+podeSubir(altura, acompanhante);
