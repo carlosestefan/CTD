@@ -70,8 +70,8 @@ function cumprePreRequisito (altura, preRequisitoTemAcompanhante) {
 
 //VERSÃO 3
 
-const altura = prompt('Qual a sua altura?')
-const acompanhante = confirm('Você tem acompanhante?')
+const altura = prompt('Qual a sua altura?');
+const acompanhante = confirm('Você tem acompanhante?');
 
 function podeSubir (altura, acompanhante) {
 
