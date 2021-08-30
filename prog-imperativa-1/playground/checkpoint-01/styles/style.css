@@ -1,62 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 
 html {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    text-align: center;
-    margin: 6.25rem;
+    background-image: url('https://carlosestefan.com/ctd/img/hero.jpg');
+    background-repeat: no-repeat;
+    background-color: #100d18;
+    background-size: cover;
+
+    color: #fff;
 }
 
-div {
-    max-width: 47.5rem;
-    margin: auto;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.columns {
+    display: block;
 }
 
 h1 {
-    color: #ffb700;
-    font-size: 3.125rem;
-    background-color: black;
-    border-radius: 10px;
-    padding: 1.25rem;
-    
-    
+    font-family: 'Teko';
+    font-size: 4rem;
+    line-height: 3.5rem;
+    color:#ffb700
 }
 
-p {
-    color: #656565;
+h2 {
+    font-family: 'Teko';
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    line-height: 1.4rem;
+}
+
+/* COLUNA 1 */
+
+.texto {
+    width: 60%;
+    padding: 3rem;
+
 }
 
 strong {
-    color: #ed9702;
+    color: #ffb700;
 }
 
+/* COLUNA 2 */
+
+.microondas {
+    width: 40%;
+}
+
+img {
+    max-width: 360px;
+}
+
+/* BOTÕES */
 
 button {
-    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+
+    font-family: 'Teko';
+    font-size: 3rem;
     font-weight: 900;
+    
     background-color: #ffb700;
     border: 0px;
     border-radius: 20px;
     color: #000000;
-    padding: 1.25rem;
-    cursor: pointer;
-    
-    
+
 }
 
 button:hover {
-    font-size: 1.5rem;
-    font-weight: 900;
     background-color: #000000;
-    border: 0px;
-    border-radius: 20px;
     color: #ffb700;
-    padding: 1.25rem;
     cursor: pointer;
     transition: .5s ease-in-out;
-    transform: scale(1.1);
-    
+    transform: scale(1.05);
+ }
+
+
+ /* MOBILE */
+ @media (max-width:600px) {
+    .desktopImg {
+        display: none;
+    }
+    .desktopBtn {
+        display: none;
+    }
+    .texto {
+        width: 100%;
+    }
+    body {
+        background-size: cover;
+        background-position-x: 70%;
+        text-align: center;
+        max-width: 400px;
+    }
+    img {
+        padding-left: 7px;
+    }
 }
 
+ /* DESKTOP */
+@media (min-width:600px) {
+    .mobileImg {
+        display:none;
+    }
+    .mobileBtn {
+        display: none;
+    }
+    img {
+        padding-left: 50px;
+    }
+
+}

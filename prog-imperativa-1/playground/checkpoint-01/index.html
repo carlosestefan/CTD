@@ -12,25 +12,37 @@
 
 <body>
     
-    <div>
-        <img src="imgs/microwave.png">
-        <h1>Microondas Mágico - O Jogo</h1>
+    <div class="container">
+       
+        <div class="columns, texto">
+            
+                <img class="mobileImg" src="https://carlosestefan.com/ctd/img/microwave.png"">
+                <h1>O Microondas Secreto</h1>
+                <h2>Tente descobrir qual o melhor tempo para preparar cada alimento.</h2>
+                
+                <p>Você foi incumbido de testar um projeto de microondas super potente, capaz de preparar alimentos em poucos segundos! Mas, para usá-lo, você deverá descobrir quanto tempo é necessário para cada um dos itens. 
+                    <br>
+                    <br>
+                Por exemplo: O tempo padrão do preparo de uma pipoca é <strong>10 segundos</strong>. Se você colocar <strong>menos</strong>, será insuficiente. Se colocar <strong>igual ou um pouco mais</strong>, ela será preparada normalmente. Se <strong>passar de duas vezes</strong> o tempo de preparo, ela queimará. Agora, se passar 3 vezes... É melhor nem estar por perto!
+                    <br>
+                    <br>
+                Fácil, né? Agora ligue o microondas e tente descobrir o tempo de preparo para cada um dos alimentos!</p>
+
+                <button class="mobileBtn" onclick="prepararComida()">LIGAR</button>
+            
+        </div>
+
+        <div class="columns, microondas">
+           
+            <img class="desktopImg" src="https://carlosestefan.com/ctd/img/microwave.png">
+
+            <button class="desktopBtn" onclick="prepararComida()">LIGAR</button>
         
-        <h2>Tente descobrir qual o melhor tempo para preparar cada alimento.</h2>
-        
-        <p>
-            Você acabou de ganhar um microondas super veloz, capaz de preparar alimentos em poucos segundos! Mas, para usá-lo, você deverá descobrir quanto tempo é necessário para cada um dos itens. 
-        <br>
-        <br>
-            Por exemplo: O tempo padrão do preparo de uma pipoca é <strong>10 segundos</strong>. Se você colocar <strong>menos</strong>, será insuficiente. Se colocar <strong>igual ou um pouco mais</strong>, ela será preparada normalmente. Se <strong>passar de duas vezes</strong> o tempo de preparo, ela queimará. Agora, se passar 3 vezes... É melhor nem estar por perto!
-        <br>
-        <br>
-            Fácil, né? Vamos tentar descobrir o tempo de preparo para cada um dos alimentos?
-        </p>
-        
-        <button onclick="prepararComida()">LIGAR MICROONDAS</button>
+        </div>
 
     </div>
+        
+    
 
     <script src="javascript/checkpoint-01.js"></script>
 </body>
