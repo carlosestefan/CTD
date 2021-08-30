@@ -16,15 +16,7 @@ Olá, você foi contratado para executar este projeto. É importante que você a
 - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
 */
 
-//var comidas = prompt('teste');
-
-
-
-
 function prepararComida (){
-
-    let comida = prompt('Selecione o prato que deseja preparar: 1 - Pipoca / 2 - Macarrão / 3 - Carne / 4 - Feijão / 5 - Brigadeiro ');
-    let tempoPreparo = parseInt (prompt('Quantos segundos você deseja esquentar o prato?'));
 
     function processo (){
         if ((tempoPadrao <= tempoPreparo) && (tempoPreparo < (tempoPadrao * 2))) {
@@ -37,31 +29,33 @@ function prepararComida (){
             window.location.replace('explosao.html');
             //alert('KABUMM!');
         }
-    }    
-  
-    if (comida === '1'){
-        tempoPadrao = 10;
-        processo();
-        
-    }else if (comida === '2'){
-        tempoPadrao = 8;
-        processo();
-        
-    }else if (comida === '3'){
-        tempoPadrao = 15;
-        processo();
-        
-    }else if (comida === '4'){
-        tempoPadrao = 8;
-        processo();
-       
-    }else if (comida === '5'){
-        tempoPadrao = 12
-        processo();
-        
-    }else {
-        alert('Prato inexistente.');
+    }   
+ 
+    let comida = prompt('Selecione o prato que deseja preparar: 1 - Pipoca / 2 - Macarrão / 3 - Carne / 4 - Feijão / 5 - Brigadeiro ');
+
+    switch (comida){
+        case '1':
+            tempoPadrao = 10;
+            break;
+        case '2':
+        case '4':
+            tempoPadrao = 8;
+            break;
+        case '3':
+            tempoPadrao = 15;
+            break;
+        case '5':
+            tempoPadrao = 12;
+            break;
+        default:
+            alert('Prato inexistente.');
+            return;
     }
+
+    let tempoPreparo = parseInt (prompt('Quantos segundos você deseja esquentar o prato?'));
+
+    
+    processo();
 
 }
 
@@ -70,8 +64,36 @@ function voltarHome(){
 }
 
 
+/*
+
+JEITO ALTERNATIVO 
+
+if (comida === '1'){
+    tempoPadrao = 10;
+    
+}else if (comida === '2'){
+    tempoPadrao = 8;
+    
+}else if (comida === '3'){
+    tempoPadrao = 15;
+    
+}else if (comida === '4'){
+    tempoPadrao = 8;
+    
+}else if (comida === '5'){
+    tempoPadrao = 12
+    
+}else {
+    alert('Prato inexistente.');
+    return;
+}
+
+*/
 
 /*
+
+TESTES
+
 function vezesDois () {
     let tempo = 1;
     let botaoMais2 = 2;
