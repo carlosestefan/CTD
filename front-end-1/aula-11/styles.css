@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+
+.box {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: orange;
+    padding: 1.25rem;
+    
+}
+
+.box2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.box3 {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+}
+
+p {
+    height: 100%;
+    background-color: white;
+    padding: 1.25rem;
+    margin: auto;
+
+}
