@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
@@ -6,74 +6,198 @@
     padding: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    box-sizing: border-box;
+}
+
+li, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #edf0f1;
+    background-color: #24252A;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #edf0f1;
 }
 
 body {
     background-color: #e7e7e7;
 }
 
-.navmenu {
+.header {
     width: 100%;
-    height: 100px;
-    background-color: darkgreen;
+    background-color:#24252A;
+    position: fixed;
+    z-index: 3;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.logo {
+    max-height: 37px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navmenu {
+    list-style: none;
+}
+
+.navmenu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navmenu li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navmenu li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #ef7823;
+}
+
+button {
+    margin-left: 30px;
+    padding: 9px 25px;
+    background-color: #ef7823;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #ef7823d9;
+    transition: all 0.3s ease 0s;
+
 }
 
 .banner {
     background-image: url('https://picsum.photos/1920/300');
     background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 300px;
+    height: 380px;
 
+}
+
+.ofertas {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    padding-left: 20px;
+    margin-top: 40px;
 }
 
 .produtos {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
     margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.produtos::before{
+    border-left: 1px solid #a1a1a1; 
 }
 
 .boxProduto {
-    width: 300px;
-    height: 430px;
-    margin: 10px;
+    display: flex;
+    flex-flow: column;
+    flex-basis: 320px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
     border: 1px solid #a1a1a1;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #fff;
-    box-shadow: 0px 2px 10px #39393955;
     padding: 25px;
     box-sizing: border-box;
+    transition: .2s ease-in-out;
 }
-.produtos:last-child {
-    margin-top: 5px
+
+.boxProduto:hover {
+    box-shadow: 0px 2px 10px #39393955;
+    transform: scale(101%);
 }
 
 .foto {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    max-height: 270px;
     border: 1px solid #a1a1a1;
 }
 
 .preco {
-    font-family: 'Roboto Condensed';
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.5rem;
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.2rem;
     margin: 15px 0 10px 0;
 }
 
 .titulo {
-    font-family: 'Roboto';
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .compre {
-    margin-top: 10px;
-    width: 250px;
-    height: 40px;
-    font-family: 'Roboto Condensed';
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 800;
+    border:none;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #24252A;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
 
+.compre:hover {
+    background-color: #ef7823;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #24252A;
+}
+
+.whats {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: .2s ease-in-out;
+}
+
+.whats:hover {
+    transform: scale(110%);
+    filter: brightness(1.1);
 }
