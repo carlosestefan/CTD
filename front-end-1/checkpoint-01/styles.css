@@ -251,3 +251,40 @@ ul {
     transform: scale(1.07);
     filter: brightness(1.1);
 }
+
+@media screen and (max-width: 758px){
+    .curiosidadesTitle, .agendeTitle {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+    .linha1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .linha2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .titulo {
+        top: 300px
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .main {
+        padding: 25px;
+    }
+    .about {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .navmenu {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+}
