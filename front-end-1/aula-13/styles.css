@@ -6,11 +6,12 @@
 
 body {
     background-color: #eeeeee;
-    max-width: 600px;
+    max-width: 640px;
     display: flex;
     justify-content: center;
     margin:auto;
     margin-top: 100px;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
