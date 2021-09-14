@@ -15,11 +15,28 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+fieldset {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+}
+
+
 form {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: auto;
+}
+
+.pessoafisica {
+    display: inline-block;
+    justify-items: flex-end;
 }
 
 img {

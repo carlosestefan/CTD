@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.main {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.mainLogo {
+    margin-bottom: 50px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.produto {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    align-items: center;
+}
+
+legend {
+    margin-bottom: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 20px;
+}
+
+label, p {
+    margin-bottom: 3px;
+}
+
+input, select {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.enderecoBox {
+    width: 100%;
+    padding: 20px;
+    align-self: center;
+    margin: auto;
+}
+
+.endereco {
+    display:flex;
+    flex-direction: column;
+}
+
+.observacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.forma {
+    margin-left: 5px;
+}
+
+.forma1 {
+    margin-left: 20px;
+}
+
+.forma1:first-child {
+    margin: 0;
+}
+
+.buttons {
+    padding: 20px;
+}
+
+@media  (min-width:1460px) {
+    img {
+        max-width: 660px;
+    }
+}
+
+@media  (max-width:1460px) {
+    img {
+        width: 100%;
+    }
+    .enderecoBox {
+        max-width: 740px;
+    }
+}
