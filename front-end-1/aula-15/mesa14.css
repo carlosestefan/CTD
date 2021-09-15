@@ -1,0 +1,15 @@
+ * {
+     background-color: #aaaaaa;
+ }
+
+ .titulo h1:hover {
+    color: salmon;
+ }
+
+ input:focus {
+     background-color: seashell;
+ }
+
+ .checkbox:checked ~ label {
+    color: green;
+}

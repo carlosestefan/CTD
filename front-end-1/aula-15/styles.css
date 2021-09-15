@@ -1,0 +1,51 @@
+button {
+    border: none;
+    padding: 12px 24px;
+    background-color: tomato;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: violet;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    transition-duration: 0.5s;
+}
+
+input:hover {
+    padding: 12px;
+}
+
+input:focus {
+    background-color: #fff;
+}
+
+input:disabled {
+    opacity: .5;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.checkbox:checked ~ label {
+    color: rosybrown;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+p::first-letter {
+    color: salmon;
+    font-size: 48px;
+}
