@@ -54,6 +54,8 @@ let contaBancaria = {
     }
 }
 
+
+
 console.log(contaBancaria.verificarSaldo());
 console.log(contaBancaria.deposito(200));
 console.log(contaBancaria.saque(100));

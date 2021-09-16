@@ -1,0 +1,32 @@
+body {
+    padding: 400px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin-top: 550px;
+    border: none;
+    padding: 12px 32px;
+    display: block;
+    margin: auto;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    50% {
+        transform: scaleY(.8)
+                   scaleX(1.2);
+        transform-origin: bottom;
+    }
+    55% {
+        transform: scaleY(1.5)
+                   scaleX(0.6)
+                   translateY(-100px);
+        transform-origin: bottom;
+    }
+
+}
