@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+main section {
+    height: 300px;
+    width: 300px;
+}
+
+main section:nth-child(1) {
+    background-color: indianred;
+    align-self: flex-end;
+}
+
+main section:nth-child(2) {
+    background-color: indigo;
+}
+
+main section:nth-child(3) {
+    background-color: lightblue;
+}
+
