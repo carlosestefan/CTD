@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer';
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body header {
+    grid-area: header;
+    background-color: #141414;
+    text-align: center;
+    padding: 20px;
+
+    position: sticky;
+    top: 0;
+    z-index:2;
+}
+
+body header img {
+    width: 200px;
+}
+
+body aside {
+    grid-area: aside;
+    background-color: #5e5e5e;
+
+    padding: 20px;
+}
+
+body aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body aside a {
+    color: white;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+body aside a:hover {
+    color: #ff6200;
+}
+
+body aside li {
+    list-style: none;
+}
+
+body main {
+    grid-area: main;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: whitesmoke;
+    
+    padding: 60px;
+}
+
+body main img {
+    width: 100%;
+}
+
+body main h1 {
+    color: #ff6200;
+}
+
+body main p {
+    color: #141414;
+}
+
+body footer {
+    grid-area: footer;
+    background-color: #141414;
+    color: whitesmoke;
+    font-size: .7rem;
+    text-align: center;
+
+    padding: 20px;
+}
+
+body footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+body footer a:hover {
+    color: #ff6200
+}
+
+p {
+    font-weight: 300;
+}
+
+@media (max-width: 425px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'header'
+        'aside' 
+        'main'
+        'footer';
+        }
+
+    body aside {
+        position: sticky;
+        top: 86px;
+        z-index: 1;
+    }
+    
+    body aside ul {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    body main {
+        padding: 24px;
+    }
+}

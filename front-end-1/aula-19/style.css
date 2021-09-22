@@ -1,0 +1,11 @@
+div {
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width: 450px) {
+    div {
+        width: 100%;
+    }
+}
