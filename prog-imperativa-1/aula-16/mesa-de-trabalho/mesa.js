@@ -22,7 +22,7 @@ const Calculadora = require('./modulos/calculadora');
 
 const app = new Calculadora();
 
-console.log('Resultado:');
+console.log(`Resultado: ${app.somar(1,1)}`);
 console.log('Zerando a calculadora:');
 console.log('Operações:');
 console.log('Operações = resultado:');

@@ -1,4 +1,4 @@
-module.exports = function Calculadora(valores, operacao) {
+module.exports = function Calculadora(valores) {
     
     this.somar = function () {
         return valores.reduce((valorAcumulado, valorInicial) => valorAcumulado + valorInicial);
@@ -18,5 +18,3 @@ module.exports = function Calculadora(valores, operacao) {
     }
     
 }
-
-return operacao(valores);
