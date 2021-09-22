@@ -19,4 +19,4 @@ function Professor(nome, sobrenome) {
 }
 
 //exportando módulo
-module.exports = Professor; 
+module.exports = Professor;
