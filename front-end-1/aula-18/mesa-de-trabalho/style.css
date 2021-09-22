@@ -60,7 +60,7 @@ body aside li {
 
 body main {
     grid-area: main;
-    height:auto;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
