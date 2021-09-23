@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: firebrick;
+        }
+
+        button {
+            background-color: firebrick;
+            border: none;
+            border-radius: 10px;
+            color: floralwhite;
+            padding: 15px 20px;
+            transition: .3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo!</h1>
+
+    <button onclick="hello()">Clique aqui</button>
+
+    <script>
+        function hello(){
+            let message = 'Olá';
+            alert(message);
+        }
+    </script>
+</body>
+</html>

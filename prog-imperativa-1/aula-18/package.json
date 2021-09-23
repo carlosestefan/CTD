@@ -1,0 +1,12 @@
+{
+  "name": "aula-18",
+  "version": "1.0.0",
+  "description": "Aula 18 - Express: Terminal Engine Parte 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos Estefan",
+  "license": "ISC",
+  "dependencies": {}
+}

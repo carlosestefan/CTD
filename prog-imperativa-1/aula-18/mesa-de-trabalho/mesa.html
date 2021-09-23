@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho - Aula 18</title>
+
+    <style>
+        body {
+            background-color: #303030;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+
+        main {
+            margin-top: 100px;
+            font-family: 'Lucida Sans', sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+        }
+
+        button {
+            background-color: rgb(255, 77, 0);
+            color: whitesmoke;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            filter: brightness(1.5);
+        }
+
+        .credits {
+            font-size: .7rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Esta é uma página HTML enviada pelo Nodejs</h1>
+        <p>Para ser redirecionado para o Google</p>
+        <button onclick="redirect()">Clique aqui</button>
+        <p class="credits">Carlos Estefan, Bianca Moraes, Vando Borges, Gilvane Ribeiro, Alan Menezes</p>
+    </main>
+
+    <script>
+        function redirect() {
+          let certeza = confirm('Você será redirecionado. Confirmar?');
+          if (certeza == true) {
+            window.location.href = 'https://google.com'
+          } else {
+            alert('Você pressionou cancelar')
+          }
+        }
+    </script>
+    
+</body>
+</html>
