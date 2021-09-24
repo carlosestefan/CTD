@@ -39,8 +39,8 @@ let carrinho = filtro.map(produto => {
 console.log(carrinho);
 
 let valorTotal = filtro.reduce((soma, produto) => {
-    return soma + produto.valor;
-}, 0);
+    return soma.valor + produto.valor;
+});
 
 console.log(`O valor de sua compra é de US$ ${valorTotal}`);
 
