@@ -44,6 +44,7 @@ p {
     font-family: 'Roboto';
     font-weight: 300;
     color: #a5a5a5;
+    margin-bottom: 6px;
 }
 
 p:last-child {
@@ -110,7 +111,6 @@ button {
     color: white;
     border: none;
     border-radius: 50px;
-    margin-left: 20px;
     padding: 9px 25px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -162,7 +162,7 @@ main {
     margin: auto;
     position: relative;
     z-index: 2;
-    padding: 50px 80px;
+    padding: 50px 25px;
 }
 
 .videoArea {
@@ -259,12 +259,67 @@ ul {
 form {
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    border: none;
 }
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados label {
+    margin-bottom: 6px;
+}
+
+fieldset .idade p, fieldset .lugares p, fieldset .razao p {
+    font-size: .9rem;
+}
+
+fieldset .idade input, fieldset .lugares input, fieldset .razao input {
+    margin-left: 10px;
+}
+
+fieldset .lugares .primeiro, fieldset .razao .primeiro, fieldset .idade .primeiro {
+    margin-left: 0;
+}
+
+legend {
+    color: #CC2229;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: .9rem;
+    color: #a5a5a5;
+}
+
+.textoInput {
+    height: 30px;
+    background-color: #efefef;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Roboto';
+    transition: .3s ease-in-out;
+}
+
+.textoInput:focus {
+    height: 40px;
+}
+
 
 @media screen and (max-width: 758px){
     .curiosidadesTitle, .agendeTitle {
