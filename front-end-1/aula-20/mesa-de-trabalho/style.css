@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 24px;
+    background-color: #141414;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1.3rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    width: 140px;
+    translate: 0 3px;
+}
+
+ul li a {
+    color: tomato;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+ul li a:hover {
+    color: whitesmoke;
+}
+
+.banner {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-image: url('https://picsum.photos/1920/1080');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles {
+    display: flex;
+    padding: 24px;
+    gap: 48px;
+}
+
+article h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 2rem;
+    color: tomato;
+}
+
+article p {
+    font-family: 'Yaldevi', sans-serif;
+    font-size: .8rem;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    background-color: #141414;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: 'Yaldevi', sans-serif;
+    font-size: .7rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+@media (max-width: 425px) {
+    .articles {
+        flex-wrap: wrap;
+    }
+}
+
+
