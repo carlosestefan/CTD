@@ -1,0 +1,43 @@
+.btn-success {
+  background-color: darkorange;
+  padding: 12px;
+}
+
+button {
+  color: white;
+  width: 100%;
+  border: none;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffc400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background-color: coral;
+}
+
+ul li {
+  color: cornsilk;
+  list-style: none;
+}
+
+ul li:hover {
+  color: darkgreen;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

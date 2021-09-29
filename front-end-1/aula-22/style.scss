@@ -1,0 +1,24 @@
+@import 'button.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    background-color: coral;
+
+    li {
+        color: cornsilk;
+        list-style: none;
+        &:hover {
+            color: darkgreen;
+            cursor: pointer;
+        }
+    }
+
+}
