@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.mainNav {
+  background-color: #eea044;
+}
+
+.navbar {
+  font-weight: 900;
+  font-size: .75rem;
+}
+
+.navbar .navbar-brand {
+  width: 30px;
+}
+
+.navbar .navbar-brand svg:hover {
+  fill: white;
+}
+
+.navbar .loginBtn {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  font-size: .75rem;
+  border: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-nav .nav-custom {
+  color: white;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("https://picsum.photos/2000/600");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.caption-custom {
+  color: white;
+  translate: 0 30px;
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+          filter: drop-shadow(0px 0px 3px black);
+}
+
+.caption-custom h4 {
+  font-weight: 900;
+}
+
+.areas {
+  padding: 24px 0;
+}
+
+.areas h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.reviews h1 {
+  color: #eea044;
+}
+
+.podcast {
+  background-image: url("imgs/comic-bkg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.podcast .card {
+  background-color: #141414;
+}
+/*# sourceMappingURL=style.css.map */

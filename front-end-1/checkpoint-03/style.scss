@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.mainNav {
+    background-color: #eea044;
+}
+
+.navbar {
+    font-weight: 900;
+    font-size: .75rem;
+
+    .navbar-brand {
+        width: 30px;
+        svg {
+            &:hover {
+                fill: white;
+            }
+        }
+    }
+    .loginBtn {
+        background-color: black;
+        color: white;
+        font-weight: 900;
+        font-size: .75rem;
+        border: none;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    transition: .2s ease-in-out;
+    &:hover {
+        color: white;
+    }
+}
+
+.navbar-nav {
+    .nav-custom {
+            color: white;
+    }
+}
+
+.banner {
+    height: 500px;
+    background-image: url("https://picsum.photos/2000/600");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.caption-custom {
+    color: white;
+    translate: 0 30px;
+    filter: drop-shadow(0px 0px 3px black);
+    h4 {
+        font-weight: 900;
+    }
+}
+
+.areas {
+    padding: 24px 0;
+    h1 {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+}
+
+.reviews {
+    h1 {
+        color: #eea044;
+    }
+}
+
+.podcast  {
+    background-image: url("imgs/comic-bkg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    .card {
+        background-color: #141414;
+    }
+}

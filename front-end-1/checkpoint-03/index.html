@@ -5,57 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>HQ Target!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dicas da Semana</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Podcast</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <g>
+                            <path d="M49.93,0.16C22.41,0.16,0.1,22.47,0.1,49.98c0,27.52,22.31,49.83,49.83,49.83S99.76,77.5,99.76,49.98   C99.76,22.47,77.45,0.16,49.93,0.16z M77.71,80.75l-7.42-3.97c-5.66,4.31-12.71,6.87-20.37,6.87c-18.59,0-33.66-15.07-33.66-33.66   c0-18.59,15.07-33.66,33.66-33.66s33.66,15.07,33.66,33.66c0,9.21-3.7,17.55-9.7,23.63L77.71,80.75z"/>
+                            <path d="M69.28,49.98c0-10.69-8.67-19.35-19.35-19.35S30.57,39.3,30.57,49.98c0,10.69,8.67,19.35,19.35,19.35   c3.34,0,6.49-0.85,9.23-2.34l12.23,7.28L64.5,62.7C67.47,59.3,69.28,54.86,69.28,49.98z"/>
+                        </g>
+                        </svg><!-- <img src="imgs/logo.svg" alt=""> -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item nav-custom">
+                            <a class="nav-link" href="#">REVIEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DICAS DA SEMANA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PODCAST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTATO</a>
+                        </li>
                     </ul>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success loginBtn" type="submit">LOGIN</button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 <div class="banner">
     <div class="container">
         <div class="row">
             <div class="col-md-12 caption-custom">
-                <h4>teste</h4>
+                <h4>TESTE</h4>
                 <p>teste de caption</p>
             </div>
         </div>
     </div>
 </div>
 
-    <div class="reviews">
+    <div class="areas reviews">
         <div class="container">
             <h1>ÚLTIMAS REVIEWS</h1>
             <div class="row">
@@ -95,7 +102,7 @@
         </div>
     </div>
 
-    <div class="podcast">
+    <div class="areas podcast">
         <div class="container">
             <h1>PODCAST</h1>
             <div class="row">
@@ -112,6 +119,16 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="areas container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Carlos Estefan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
