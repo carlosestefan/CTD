@@ -1,0 +1,74 @@
+.areas {
+    padding: 24px 0;
+    h1 {
+        font-weight: 900;
+        font-size: 2rem;
+    }
+}
+
+.area-light {
+    .card {
+        h5 {
+            font-weight: 900;
+        }
+        img {
+            transition: .3s ease-in-out;
+            &:hover {
+                transform: scale(1.01);
+                filter: brightness(1.1);
+            }
+        }
+    }
+    .container {
+        .titulo {
+            display: flex;
+            gap: 10px;
+            .parte1 {
+                color: #eea044;
+            }
+            .parte2 {
+                color: black;
+            }
+        }
+    }
+}
+
+.area-dark  {
+    background-image: url("imgs/comic-bkg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    .container {
+        .titulo {
+            display: flex;
+            gap: 10px;
+            .parte1 {
+                color: #eea044;
+            }
+            .parte2 {
+                color: white;
+            }
+        }
+    }
+    .card {
+        background-color: #141414;
+        color: white;
+        img {
+            transition: .3s ease-in-out;
+            &:hover {
+                transform: scale(1.02);
+                filter: brightness(1.1);
+            }
+        }
+        .card-body {
+            padding-left: 0;
+        }
+    }
+
+
+}
+
+.col-height {
+    height: 30vh;
+}

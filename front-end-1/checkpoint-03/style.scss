@@ -1,86 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'navbar.scss';
+@import 'buttons.scss';
+@import 'areas.scss';
+@import 'reviews.scss';
 
 * {
     font-family: 'Lato', sans-serif;
 }
 
-.mainNav {
-    background-color: #eea044;
+html {
+    scroll-behavior: smooth;
 }
 
-.navbar {
-    font-weight: 900;
-    font-size: .75rem;
-
-    .navbar-brand {
-        width: 30px;
-        svg {
-            &:hover {
-                fill: white;
-            }
-        }
-    }
-    .loginBtn {
-        background-color: black;
-        color: white;
-        font-weight: 900;
-        font-size: .75rem;
-        border: none;
-    }
+strong {
+    color: #eea044;
 }
 
-.navbar-light .navbar-nav .nav-link {
+a {
+    text-decoration: none;
     color: black;
-    transition: .2s ease-in-out;
     &:hover {
-        color: white;
-    }
-}
-
-.navbar-nav {
-    .nav-custom {
-            color: white;
-    }
-}
-
-.banner {
-    height: 500px;
-    background-image: url("https://picsum.photos/2000/600");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.caption-custom {
-    color: white;
-    translate: 0 30px;
-    filter: drop-shadow(0px 0px 3px black);
-    h4 {
-        font-weight: 900;
-    }
-}
-
-.areas {
-    padding: 24px 0;
-    h1 {
-        font-weight: 900;
-        font-size: 2rem;
-    }
-}
-
-.reviews {
-    h1 {
         color: #eea044;
     }
 }
 
-.podcast  {
-    background-image: url("imgs/comic-bkg.png");
+.banner {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 500px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        .titulo-banner {
+            h4 {
+                color: #eea044;
+                font-size: 1.7rem;
+                margin-bottom: 0;
+                font-weight: 900;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+                span {
+                    border-radius: 10px;
+                    padding: 10px;
+                    background-color: black;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    color: white;
+                }
+            }
+        }
+        .txt-banner {
+            p {
+                font-size: 2rem;
+                font-weight: 700;
+                span {
+                    padding: 10px;
+                    background-color: white
+                }
+            }
+        }
+        button {
+            text-align: right;
+            width: 50%;
+        }
+    }
+    background-image: url("imgs/banner.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    .card {
-        background-color: #141414;
+    background-size:cover;
+    background-position: 0 -200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer {
+    font-size: .75rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .row {
+        gap: 20px;
+    }
+    .banner {
+        background-position: -200px -200px;
+        .container {
+            align-items: center;
+            p {
+                text-align: center;
+            }
+            .txt-banner {
+                p {
+                    font-size: 1rem;
+                }
+            }
+            
+        }
     }
 }

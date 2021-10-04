@@ -1,0 +1,50 @@
+.mainNav {
+  background-color: #eea044;
+}
+
+.navbar {
+  font-weight: 900;
+  font-size: .8rem;
+}
+
+.navbar .navbar-brand {
+  width: 140px;
+}
+
+.navbar .navbar-brand svg {
+  -webkit-transition: fill .2s ease-in-out;
+  transition: fill .2s ease-in-out;
+}
+
+.navbar .navbar-brand svg:hover {
+  fill: white;
+}
+
+.navbar .loginBtn {
+  background-color: black;
+  color: white;
+}
+
+.navbar .loginBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.navbar-light .navbar-nav .navActive {
+  color: white;
+}
+
+.navbar-nav .nav-custom {
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */
