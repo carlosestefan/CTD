@@ -1,20 +1,15 @@
-module.exports = function Calculadora(valores) {
-    
-    this.somar = function () {
-        return valores.reduce((valorAcumulado, valorInicial) => valorAcumulado + valorInicial);
-    },
+module.exports = function Calculadora() {
+    let valorAcumulado = 0; //privado
 
-    this.multiplicar = function () {
-       return valores.reduce((valorAcumulado, valorInicial) => valorAcumulado * valorInicial);
+    this.pegarValorAcumulado = () =>  valorAcumulado; // público
 
-    },
-    
-    this.subtrair = function () {
-        return valores.reduce((valorAcumulado, valorInicial) => valorAcumulado - valorInicial);
-    },
-    
-    this.dividir = function () {
-        return valores.reduce((valorAcumulado, valorInicial) => valorAcumulado / valorInicial);
-    }
-    
+    this.somar = (valor) => valorAcumulado += valor;
+
+    this.subtrair = (valor) => valorAcumulado -= valor;
+
+    this.multiplicar = (valor) => valorAcumulado *= valor;
+
+    this.dividir = (valor) => valorAcumulado /= valor;
+
+
 }

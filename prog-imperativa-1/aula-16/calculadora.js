@@ -65,6 +65,6 @@ function dividir(valores) {
 
 
 console.log(calculadora([2,2], somar));
-console.log(calculadora([2,2], subtrair));
+console.log(calculadora([2,1], subtrair));
 console.log(calculadora([2,2], multiplicar));
 console.log(calculadora([2,2], dividir));

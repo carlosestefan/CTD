@@ -22,7 +22,23 @@ const Calculadora = require('./modulos/calculadora');
 
 const app = new Calculadora();
 
-console.log(`Resultado: ${app.somar(1,1)}`);
-console.log('Zerando a calculadora:');
-console.log('Operações:');
-console.log('Operações = resultado:');
+
+
+// console.log(`Resultado: ${app.somar(1)}`);
+// console.log(`Resultado: ${app.somar(2)}`);
+// console.log(`Resultado: ${app.subtrair(1)}`);
+// console.log(`Resultado: ${app.multiplicar(2)}`);
+// console.log(`Resultado: ${app.dividir(4)}`);
+
+// EXCEÇÕES OU CASOS ESPECIAIS
+//console.log(`Resultado: ${app.dividir(-1)}`);
+
+// console.log('Zerando a calculadora:');
+// console.log('Operações:');
+// console.log('Operações = resultado:');
+
+function teste() {
+    return arguments;
+}
+
+console.log(teste(app.somar(2)))
